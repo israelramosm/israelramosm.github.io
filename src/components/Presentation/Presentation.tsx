@@ -65,10 +65,10 @@ export default function Presentation() {
     <section className="my-5 flex h-96 flex-col justify-end pb-4 shadow-xl shadow-black md:flex-row md:py-6">
       <div className="order-2 flex w-full flex-col items-center justify-center md:mr-8 md:items-end md:justify-end">
         <header className="order-2 mt-3 flex flex-col items-center md:mt-0 md:items-end md:justify-end">
-          <h1 className="text-base font-bold md:text-[1.25rem] lg:text-[1.5rem]">
+          <h1 className="text-base font-bold text-white drop-shadow-lg md:text-[1.25rem] lg:text-[1.5rem]">
             Arnulfo Israel Ramos Magaña
           </h1>
-          <h2 className="text-[.75rem] font-semibold md:text-[1rem] lg:text-[1.25rem]">
+          <h2 className="text-[.75rem] font-semibold text-gray-100 drop-shadow-md md:text-[1rem] lg:text-[1.25rem]">
             Fullstack Application Developer
           </h2>
         </header>
@@ -76,7 +76,12 @@ export default function Presentation() {
           {contactInformation.map((info, i) => (
             <div key={i} className="md:ml-8">
               <Tooltip content={info.value}>
-                <Link href={info.link}>{info.icon}</Link>
+                <Link 
+                  href={info.link}
+                  className="text-white transition-colors duration-200 hover:text-gray-200"
+                >
+                  {info.icon}
+                </Link>
               </Tooltip>
             </div>
           ))}
@@ -84,8 +89,8 @@ export default function Presentation() {
       </div>
       <div className="order-1 flex w-full basis-1/4 items-center justify-center md:items-end">
         <Image
-          className="size-24 rounded-full border-2 border-white lg:size-32"
-          src={`${IMAGE_PATH}/images/profile.jpeg`}
+          className="size-24 rounded-full border-4 border-white shadow-xl lg:size-32"
+          src={`${IMAGE_PATH}/images/profile.png`}
           alt="Profile"
           width={100}
           height={100}
