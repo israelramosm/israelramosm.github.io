@@ -37,18 +37,14 @@ export default function Home() {
         <Experience />
       </HomeSection>
       <HomeSection id="education">
-        <Header title="Education" />
+        <Header title="Education & Certifications" />
         <Education />
       </HomeSection>
       <HomeSection id="skills">
         <Header title="Skills" />
         <Skills />
       </HomeSection>
-      <HomeSection id="languages">
-        <Header title="Languages" />
-        <h3 className="font-semibold">English - C1</h3>
-      </HomeSection>
-      <HomeSection id="certifications">
+      <HomeSection id="certifications" className="hidden">
         <Header title="Certifications" />
         <Certifications />
       </HomeSection>

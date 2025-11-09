@@ -1,17 +1,22 @@
 import Link from 'next/link';
-import TitleHeader from '../Headers/TitleHeader';
 import { CERTIFICATIONS_DATA } from './certificationsData';
 
 export default function Certifications() {
   return (
-    <>
-      {CERTIFICATIONS_DATA.map((c, i) => (
-        <Link key={i} href={c.link}>
-          <div className="mb-4 w-full rounded-lg border border-gray-300 bg-white p-2 text-left font-medium text-gray-900 hover:bg-gray-100">
-            <TitleHeader subtitle={c.name} rightText={c.date} />
-          </div>
-        </Link>
+    <ul className="ml-6 space-y-2">
+      {CERTIFICATIONS_DATA.map((c) => (
+        <li key={c.link} className="list-disc">
+          <Link
+            href={c.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-gray-900 hover:bg-gray-100"
+          >
+            {c.name}
+          </Link>
+          <span className="ml-2 text-gray-600">({c.date})</span>
+        </li>
       ))}
-    </>
+    </ul>
   );
 }
