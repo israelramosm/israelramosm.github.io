@@ -24,7 +24,7 @@ export default function Home() {
       {/* Photo by Lukas: https://www.pexels.com/photo/white-apple-keyboard-near-white-cup-917463/ */}
       <HomeSection
         id="presentation"
-        className="bg-[url('/images/profile-bg.png')] bg-cover bg-top lg:bg-center"
+        className="bg-[url('/images/profile-bg-2-inverted.png')] bg-cover bg-top lg:bg-center"
       >
         <Presentation />
       </HomeSection>
