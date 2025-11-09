@@ -1,6 +1,7 @@
 'use client';
 
 import { DeepPartial } from '@/src/util/types';
+// biome-ignore lint/style/useImportType: Using inside components
 import {
   Dropdown,
   FlowbiteNavbarTheme,
@@ -30,17 +31,11 @@ const NavbarPage = () => (
         <Dropdown.Item as={Link} href="/#experience">
           Experience
         </Dropdown.Item>
-        <Dropdown.Item as={Link} href="/#education">
-          Education
+        <Dropdown.Item as={Link} href="/#education-certifications">
+          Education & Certifications
         </Dropdown.Item>
         <Dropdown.Item as={Link} href="/#skills">
           Skills
-        </Dropdown.Item>
-        <Dropdown.Item as={Link} href="/#languages">
-          Languages
-        </Dropdown.Item>
-        <Dropdown.Item as={Link} href="/#certifications">
-          Certification
         </Dropdown.Item>
       </Dropdown>
     </NavbarCollapse>

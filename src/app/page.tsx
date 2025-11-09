@@ -1,4 +1,3 @@
-import Certifications from '../components/Certifications/Certifications';
 import Education from '../components/Education/Education';
 import Experience from '../components/Experience/Experience';
 import HomeSection from '../components/HomeSection/HomeSection';
@@ -36,17 +35,13 @@ export default function Home() {
         <Header title="Experience" />
         <Experience />
       </HomeSection>
-      <HomeSection id="education">
+      <HomeSection id="education-certifications">
         <Header title="Education & Certifications" />
         <Education />
       </HomeSection>
       <HomeSection id="skills">
         <Header title="Skills" />
         <Skills />
-      </HomeSection>
-      <HomeSection id="certifications" className="hidden">
-        <Header title="Certifications" />
-        <Certifications />
       </HomeSection>
     </section>
   );
