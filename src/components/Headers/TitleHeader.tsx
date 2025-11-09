@@ -14,10 +14,9 @@ export default function TitleHeader({
   rightText?: string;
 }) {
   return (
-    <>
-      <span className="float-right text-gray-400">{rightText}</span>
+    <>      
       {title && <h3 className="text-lg font-semibold">{title}</h3>}
-      <h4 className="text-sm">{subtitle}</h4>
+      <h4 className="text-sm">{subtitle} - <span className="text-gray-400">{rightText}</span></h4>
     </>
   );
 }

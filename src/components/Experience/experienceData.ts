@@ -8,42 +8,55 @@ export interface ExperienceI {
 
 export const EXPERIENCE_DATA: ExperienceI[] = [
   {
+    position: 'Software Engineer – JavaScript',
+    company: 'Improving (Autodesk)',
+    dates: 'May 2024 – Present',
+    summary:
+      'Key role in the modernization of a legacy enterprise application by migrating to a React-based architecture, while ensuring system stability and user support.',
+    bullets: [
+      'Resolved critical bugs and performance issues to maintain uninterrupted business operations.',
+      'Delivered new features within the legacy codebase, balancing evolving requirements with backward compatibility.',
+      'Implemented React modules and modern frontend tooling as part of the architectural migration strategy.',
+      'Collaborated with cross-functional teams to design reusable components and scalable patterns.',
+      'Provided direct technical support via internal channels, ensuring high user satisfaction.',
+      'Participated in code reviews and knowledge-sharing sessions to elevate team alignment and code quality.',
+    ],
+  },
+  {
     position: 'Full Stack Application Developer',
     company: 'IBM',
-    dates: '2020-10 - 2024-05',
+    dates: 'October 2020 – May 2024',
     summary:
-      'Responsible for developing and migrating applications to new technologies using frontend frameworks such as react/redux and svelte, backend frameworks such as expressjs and nestjs, and working with IBM cloud technologies and resources.',
+      'Developed and migrated internal applications using modern frontend and backend frameworks, integrating IBM Cloud technologies.',
     bullets: [
-      'Optimized the usability of the legacy application system to help employees with informational and behavioral issues within the organization by developing a new frontend application using react/redux and expressjs.',
-      'Attended technical tickets that users raised on the application by talking to the user about the problems maintaining and supporting the frontend application developed in react/redux and expressjs for any errors.',
-      'Facilitated the development experience for my teammates by configuring, developing, and monitoring IBM Cloud resources used within the applications.',
-      'Lead event-driven microservices development using IBM Cloud technologies such as Event Stream built on Kafka to create cases within applications.',
-      'Built and developed the user experience of new internal applications that create specific cases for the IBM business model using technologies and frameworks such as Svelte for the front end and nestjs for the back end.',
+      'Rebuilt legacy systems to improve usability and address organizational behavioral challenges using React/Redux and Express.js.',
+      'Engineered event-driven microservices with IBM Event Streams (Kafka) to automate workflows.',
+      'Streamlined development workflows by configuring and monitoring IBM Cloud resources.',
     ],
   },
   {
     position: 'Java Developer',
     company: 'Tata Consultancy Services',
-    dates: '2019-02 - 2020-10',
+    dates: 'February 2019 – October 2020',
     summary:
-      'Responsible for developing and maintaining the backend and the frontend applications using Java as the main language',
+      'Maintained and enhanced backend and frontend systems for financial services, primarily using Java.',
     bullets: [
-      'Gave maintenance and support for the credit cards and loans area by updating the code according to client requirements',
-      'Collaborated with the Learning and Development team within the office, creating and developing applications using technologies such as HTML5, CSS3, Javascript, and JQuery.',
-      "Created and organized meetings with other teammates to teach them new technologies used in the office and the company's projects",
-      "I was part of the office's onboarding team, which followed up, resolved questions, and guided new developers.",
+      'Supported credit card and loan systems by implementing client-requested updates.',
+      'Partnered with the Learning & Development team to build internal tools using HTML5, CSS3, JavaScript, and jQuery.',
+      'Led knowledge-sharing sessions to onboard teammates with emerging technologies.',
+      'Served on the onboarding team, mentoring new developers and resolving early-stage technical queries.',
     ],
   },
   {
     position: 'Software Engineer',
     company: 'Unosquare',
-    dates: '2016-09 - 2018-08',
+    dates: 'September 2016 – August 2018',
     summary:
-      'Responsible for developing various applications and projects using different technologies and frameworks such as Angular, React, C# .NET, and .NET Core and devices such as Raspberry Pi for internal and external use.',
+      'Developed internal and external applications using a variety of technologies and devices, including Raspberry Pi.',
     bullets: [
-      "Developed the company's main page using technologies such as HTML5, Javascript, CSS3, and C# .NET, creating the views, home, and information page.",
-      "Maintenance and development of the company's private and open-source projects using technologies such as Angular, React, Javascript, C# .NET, Raspberry Pi, and .NET Core technologies.",
-      'Microsoft certification exams 480, 486, and 487.',
+      'Built the company\'s main website using HTML5, CSS3, JavaScript, and C# .NET.',
+      'Maintained and enhanced both private and open-source projects using Angular, React, .NET Core, and Raspberry Pi.',
+      'Earned Microsoft certifications: Exam 480 (Programming in HTML5 with JavaScript and CSS3), Exam 486 (Developing ASP.NET MVC Web Applications), and Exam 487 (Developing Microsoft Azure and Web Services).',
     ],
   },
 ];
